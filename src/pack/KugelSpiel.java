@@ -3,11 +3,11 @@ package pack;
 import java.util.Random;
 
 public class KugelSpiel {
-    public static final int MR = 100;
-    public static final int MK = 200;
+    public static final int MR = 100; //MAX_RUNDEN
+    public static final int MK = 200; //MAX_KUGELN
     public static final boolean DEBUG = false;
 
-    public  static int Faktor(){
+    public  static int Faktor(){ //Kugeln pro Runde
         int faktor = MK;
         faktor = faktor / MR;
         return  faktor;
@@ -80,19 +80,21 @@ public class KugelSpiel {
 
 
     public static  void AlleRunden(){
-        int KS1 = MK;
-        int KS2 = MK;
+        int KS1 = MK; //Kugeln Spieler 1
+        int KS2 = MK; //Kugeln Spieler 2
 
-        int SiegS1 =0 ;
-        int SiegS2 =0 ;
+        int SiegS1 =0 ; //Siege Spieler 1
+        int SiegS2 =0 ; //Siege Spieler 1
 
         for(int r = 0; r < MR; r++){
             int k1 = StratZufall(KS1);
             int k2 = StratSchlauerAlsZufall(KS2);
 
+            //Kugeln abziehn
             KS1 = KS1 - k1;
             KS2 = KS2 - k2;
 
+            //siege
             if(k1 > k2){
                 SiegS1 = SiegS1 +1;
             }
