@@ -103,7 +103,7 @@ public class KugelSpiel {
             }
 
             if(DEBUG){
-                ausgRunde(r, MR);
+                ausgRunde(r+1, MR);
                 ausgDebug(1,k1,SiegS1,KS1);
                 ausgDebug(2,k2,SiegS2,KS2);
             }
