@@ -75,7 +75,7 @@ public class KugelSpiel {
         System.out.println("\tSpieler"+p+" stetzt: "+k+" Kugel(n), Spielstand: "+s+" Punkt(e) und "+r+" Restkugel(n)");
     }
     public static void ausgErg(int p,int s, int r){
-        System.out.println("\tSpieler"+p+": Spielstand: "+s+" Punkt(e) und "+r+" Restkugel(n)");
+        System.out.println("Spieler"+p+": Spielstand: "+s+" Punkt(e) und "+r+" Restkugel(n)");
     }
 
 
